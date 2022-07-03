@@ -7,7 +7,8 @@ import time
 from .config import settings
 
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
-SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
+# SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
+SQLALCHEMY_DATABASE_URL = "postgres://xuzijnpwwcitps:528ec2568f6f03e2fa045a200444dfc08baf5c0e684c7903e2a8781b5eaa3fe0@ec2-44-195-162-77.compute-1.amazonaws.com:5432/damdbbavd5euig"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
